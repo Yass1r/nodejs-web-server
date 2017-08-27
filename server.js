@@ -93,6 +93,13 @@ app.get('/bad', (req, res) => {
     });
 });
 
+app.get('/project', (req, res)=> {
+    res.render('project.hbs',{
+        title: 'Project Page!',
+        describe: 'Personal Project lists here!',
+        welcomeBody: 'Welcome to Project page. This page will update soon. Thank you!'
+    });
+});
 
 app.listen(port,() => {
     console.log(`\n[+] WebServer running on port: ${port}\n`);
