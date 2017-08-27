@@ -30,7 +30,7 @@ app.set('view engine','hbs');
 
 //setting up static html files on public folder
 app.use(express.static(__dirname + '/public'));
-var port = 3000;
+const port = process.env.PORT || 3000;
 
 //setting up middleware feature, its function when loading the page (same as callback function)
 //the following is request timestamp
